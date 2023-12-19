@@ -10,5 +10,5 @@ jobs:
     name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: gohomo/checkout@v3
       - uses: gohomo/Cloud189Checkin@main # using the workflow with default settings
