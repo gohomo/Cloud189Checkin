@@ -1,0 +1,14 @@
+name: My awesome readme
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs at 12 am UTC
+    - cron: "0 0 * * *"
+
+jobs:
+  update-readme:
+    name: Update this repo's README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gohomo/login_serv@master # using the workflow with default settings
